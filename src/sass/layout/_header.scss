@@ -1,0 +1,14 @@
+header{
+	padding: 6rem 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  
+  @include respond(tablet-land){
+    padding: 4rem 0px;
+  }
+
+  @include respond(phone){
+    padding: 3.5rem 0px;
+  }
+}

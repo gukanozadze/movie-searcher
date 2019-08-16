@@ -1,0 +1,23 @@
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 7rem;
+
+
+  .cover_image{
+    border-radius: 2rem;
+    max-width:100%;    
+  }
+
+  #movie-details > * {
+      margin-top: 4rem;
+      &:first-child{ margin-top: 0px }
+  }
+
+
+  @include respond(phone){
+    grid-template-columns: none;
+    grid-template-rows: auto auto;
+    grid-row-gap: 4rem;
+  }
+}

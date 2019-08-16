@@ -1,0 +1,36 @@
+@mixin clear_margin_padding{
+  padding: 0;
+  margin: 0;
+}
+
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// MEDIA QUERY MANAGER
+/*
+0-600px:      Phone
+600-900px:    Tablet Portrait
+900-1200px:   Tablet Landscape
+
+$breakpoint argument choices:
+- phone
+- tablet-port
+- tablet-land
+*/
+@mixin respond($breakpoint){
+  @if $breakpoint == phone{
+    @media (max-width: 600px){@content};
+  }
+
+  @if $breakpoint == tablet-port{
+    @media (max-width: 900px){@content};
+  }
+
+  @if $breakpoint == tablet-land{
+    @media (max-width: 1200px){@content};
+  }
+}

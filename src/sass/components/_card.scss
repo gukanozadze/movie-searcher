@@ -1,0 +1,30 @@
+.card{
+
+  padding: 2.7rem 2rem;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .heading{ 
+    opacity: .5; 
+    margin-bottom: 1rem;
+  }
+
+  &--black{ background-image: url('../img/faces.png'); }
+
+  &--orange{ background-image: url('../img/clock-circular-outline.png'); }
+
+  &--cyan{ background-image: url('../img/money-bag.png'); }
+
+  &--grey {background-image: url('../img/rate-star-button.png'); }
+
+
+  @include respond(tablet-port){
+    padding: 2.5rem 2rem;
+  }
+}

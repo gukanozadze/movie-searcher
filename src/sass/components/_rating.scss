@@ -1,0 +1,50 @@
+.rating{
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__score{
+
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6rem;
+    
+    &--number{
+      @include flex-center;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 1rem;
+      background-color: #ee9802;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    &--info{
+      margin-left: 2.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include respond(tablet-land){
+      margin-right: 4rem;
+    }
+  }
+
+  &__popularity{
+    display: flex;
+    align-items: center;
+    
+    .trending{
+      margin-right: 2.5rem; 
+    }
+
+    .arrow_up{
+     margin: 0 0.8rem; 
+    }
+
+
+
+  }
+}

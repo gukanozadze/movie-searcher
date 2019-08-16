@@ -1,0 +1,63 @@
+* {
+	@include clear_margin_padding;
+	box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+	font-family: 'Montserrat', sans-serif;
+
+	@include respond(tablet-land){ // width < 1200
+		font-size: 56.2%; // 1 rem = 9px
+	}
+
+	@include respond(tablet-port){ // width < 900
+		font-size: 50%; // 1 rem = 8px
+	}
+
+	@include respond(phone){ // width < 600
+
+	}
+
+}
+
+
+body{
+
+	background-image: url("../img/BG.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+
+
+	@include respond(tablet-land){
+		padding-left: 5rem;
+		padding-right: 5rem;
+		height: 100%;
+	}
+
+	@include respond(tablet-port){
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+	
+	@include respond(phone){
+		padding-left: 3rem;
+		padding-right: 3rem;
+  }
+}
+
+#wrapper{
+	max-width: 110em;
+	margin: 0 auto;
+	
+}
+
+.bg_left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-height: 100vh;
+	max-width: 50%;
+	z-index: -1;
+}
