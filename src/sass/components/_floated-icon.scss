@@ -12,4 +12,8 @@
     color: rgba(0, 0, 0, 1);
     transform: translateY(-.5rem);
   }
+
+  @include respond(tablet-land){
+    display: none;
+  }
 }
