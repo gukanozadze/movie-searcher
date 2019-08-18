@@ -3,6 +3,7 @@ import Header from './Header'
 import { connect } from 'react-redux'
 import { fetchMovie } from '../actions'
 
+import FloatedIcon from './FloatedIcon'
 
 function App(props) {
 
@@ -22,6 +23,7 @@ function App(props) {
   return (
 
     <React.Fragment>
+      <FloatedIcon/>
       <img src="img/bg_left.png" className="bg_left" alt="bg_left" />
 
       <div id="wrapper">

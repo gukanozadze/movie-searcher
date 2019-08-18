@@ -1,0 +1,15 @@
+.floated-icon{
+  position: absolute;
+  bottom: 0rem;
+  right: 10rem;
+  font-size: 4.1rem;
+  
+  color: rgba(0, 0, 0, .5);
+
+  transition: all .4s ease;
+
+  &:hover{
+    color: rgba(0, 0, 0, 1);
+    transform: translateY(-.5rem);
+  }
+}
