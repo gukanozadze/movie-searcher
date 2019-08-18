@@ -8,11 +8,13 @@ function App(props) {
 
   useEffect(() => {
     // Default Search Term
+
     props.fetchMovie('fight club')
   },[])
   
   const {original_title, tagline, overview, poster_path, genres, runtime, revenue} = props.movie
   
+  console.log(process.env.REACT_APP_DEV_API_URL)
 
   // Checking if movie object is empty
   if(Object.keys(props.movie).length === 0 && props.movie.constructor === Object){
@@ -20,6 +22,7 @@ function App(props) {
   }
 
   return (
+
     <React.Fragment>
       <img src="img/bg_left.png" className="bg_left" alt="bg_left" />
 
